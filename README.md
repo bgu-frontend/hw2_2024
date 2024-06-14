@@ -112,37 +112,39 @@ The hw1 tools, plus:
 ## Checking the coding task:
 
 ## Test requirements- reminder from hw1
-1. Each note should be of [class name](https://www.w3schools.com/html/html_classes.asp) **"note"**. (And not note)
+1. Each note should be of [class name](https://www.w3schools.com/html/html_classes.asp) **"note"**. (And not post)
 2. A note must get the unique ID from the database and use it as the [html id attribute](https://www.w3schools.com/html/html_id.asp).
 3. Pagination buttons:
     1. Navigation buttons should be with [html name attribute](https://www.w3schools.com/tags/att_name.asp) **"first"**, **"previous"**, **"next"**, **"last"**.
     2. Page buttons should be with the [html name attribute](https://www.w3schools.com/tags/att_name.asp) **"page-<target_page_number>"**
 
 ## Test requirements- hw2
-1. 
-    1. Each note should have an `Edit`/`Delete` button.
-    2. Edit button: we will test the updated the note body.
-        1. button name **"edit-<note_id>"** [html name attributes](https://www.w3schools.com/tags/att_name.asp).
-        2. When clicked, a text input should be rendered:
-            1. with the same input as the note.
-            2. It should be editable
-            3. with name **"text_input-<note_id>"**
-            4. with "save" button **"text_input_save-<note_id>"**
-            5. with "cancel" button **"text_input_cancel-<note_id>"**
+1. Each note should have an `Edit`/`Delete` button.
+2. Edit button: we will test the updated the note body.
+    1. button name **"edit-<note_id>"** [html name attributes](https://www.w3schools.com/tags/att_name.asp).
+    2. When clicked, a text input should be rendered:
+        1. with the same input as the note.
+        2. It should be editable
+        3. with name **"text_input-<note_id>"**
+        4. with "save" button **"text_input_save-<note_id>"**
+        5. with "cancel" button **"text_input_cancel-<note_id>"**
 
-    3. Delete button:
-        1. name **"delete-<note_id>"** [html name attributes](https://www.w3schools.com/tags/att_name.asp).
+3. Delete button:
+    1. name **"delete-<note_id>"** [html name attributes](https://www.w3schools.com/tags/att_name.asp).
 
-    3. `Add new note` button: we will only test the body of the new message, (content field).
-        1. button name **"add_new_note"**. [html name attributes](https://www.w3schools.com/tags/att_name.asp).
-        2. When clicked, React should render a text input:
-            1. It should be editable
-            2. with name **"text_input_new_note"**
-            3. with "save" button **"text_input_save_new_note"**
-            4. with "cancel" button **"text_input_cancel_new_note"**
-    4. There should be a global "theme" button that changes between two styles: dark and light.
-        1. name **"change_theme"** [html name attributes](https://www.w3schools.com/tags/att_name.asp).
-        2. You're free to implement any style change, as long as it appears visually on the UI.
+4. `Add new note` button: we will only test the body of the new message, (content field).
+    1. button name **"add_new_note"**. [html name attributes](https://www.w3schools.com/tags/att_name.asp).
+    2. When clicked, React should render a text input:
+        1. It should be editable
+        2. with name **"text_input_new_note"**
+        3. with "save" button **"text_input_save_new_note"**
+        4. with "cancel" button **"text_input_cancel_new_note"**
+5. There should be a global "theme" button that changes between two styles: dark and light.
+    1. name **"change_theme"** [html name attributes](https://www.w3schools.com/tags/att_name.asp).
+    2. You're free to implement any style change, as long as it appears visually on the UI.
+6. Data transfer: 10 notes at a time, (frontend-backend, backend-atlas, see Mongoose pagination API, similarly to hw1).
+   
+
 
 ### The tester will:
 1. `git clone <your_submitted_github_repo>`
