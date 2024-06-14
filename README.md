@@ -4,9 +4,9 @@ We will continue from hw1, the previous website. The main goal of this task is t
 1. We will use a Mongo database service from Atlas.
 2. The database will hold the notes data.
 3. We will use Express to implement the backend, which will support fetching, adding, deleting, and removing messages.
-4. implement a logger middleware.
+4. implement a logger middleware: log to file called "log.txt".
 5. Most of the material can be found in [Full Stack Open- part 3](https://fullstackopen.com/en/part3).
-6. In hw1, I accidentally used 'note' and 'post'. As a result, many people use '/posts.json' instead of '/notes.json' as a JSON server input, so we changed the tests to fit both. From HW2 on, we'll align on 'note.' Please change the HTML names of the buttons and in other places from 'post' to 'note'. 
+6. In hw1, I accidentally used 'note' and 'post'. As a result, many people use '/posts.json' instead of '/notes.json' as a JSON server input, so we changed the tests to fit both. From HW2 on, we'll align on 'note.'. Please change the HTML names of the buttons and in other places from 'post' to 'note'.
 
 ## Submission
 1. Submission is in pairs, but starting alone is better for practice.
@@ -34,19 +34,17 @@ Recommendation about using an AI assistant: You can ask questions and read the a
 ## Code
 1. Please put the previous code in a subdirectory called "frontend" and create a new directory called "backend." you can use the same GitHub link.
 2. As before, we will run the frontend on port 3000 and the backend on port 3001.
-
-4. The backend will have a middleware logger for the incoming and outgoing messages; the log is a file called "log.txt."
-5. .env file will be used to define your environment variables:
+3. The backend will use the .env file to define your environment variables:
     1. Atlas connection string: You'll use your own, and the tests will use a new .env file.
 
 ### Github 
-As before, Hw2 will be submitted via Github.
+As before, You will submit HW2 will be submitted via Github.
 
 ## Prerequisites
 ### Tools
 The hw1 tools, plus:
 1. Enable requests between the frontend and backend by using cors in the backend: [CORS](https://fullstackopen.com/en/part3/deploying_app_to_internet#same-origin-policy-and-cors)
-2. Read local .env file: [dotenv](https://www.npmjs.com/package/dotenv)
+2. Read the local .env file: [dotenv](https://www.npmjs.com/package/dotenv)
 3. The backend uses Mongoose to query the database. [mongoose](https://mongoosejs.com/docs/index.html)
 4. Use nodemon to rerun the backend automatically when the source file changes. [nodemon](https://www.npmjs.com/package/nodemon)
 5. Refresh: Read about [await/async](https://javascript.info/async-await)
@@ -72,16 +70,20 @@ The hw1 tools, plus:
     2. For each note, add a delete button.
     2. One "add new note" button.
 3. Like before, each page has ten notes. Please use Mongoose's pagination API.
-
-
-## middleware Description:
-1. The backend should use dotenv to read the ".env" file. It will contain "MONGODB_CONNECTION_URL = '...'", which Mongoose will use.
-2. Routes:
+4. The backend should use dotenv to read the ".env" file. It will contain "MONGODB_CONNECTION_URL = '...'", which Mongoose will use.
+5. Routes:
     1. Get all notes, HTTP GET request to '/notes.'
     2. Get the i'th note, GET request to '/notes/[i].' (For example, http://localhost:3001/notes/1)
     3. Create a new note POST request to '/notes.'
     4. Update the i'th note, PUT request to 'notes/[i].'
     5. Delete the i'th note, DELETE request to 'notes/[i].'
+6. The backend will have a middleware logger for the incoming HTTP requests; it will log to a file called "log.txt":
+    1. time
+    2. HTTP request methodאוקיי
+    3. request target path
+    4. request body
+
+
 
 ## Atlas Description:
 1. Like before, the destination Mongodb will always contain at least one note.
@@ -109,7 +111,7 @@ The hw1 tools, plus:
 
 ## Checking the coding task:
 
-## Test requirements- hw1
+## Test requirements- reminder from hw1
 1. Each note should be of [class name](https://www.w3schools.com/html/html_classes.asp) **"note"**. (And not note)
 2. A note must get the unique ID from the database and use it as the [html id attribute](https://www.w3schools.com/html/html_id.asp).
 3. Pagination buttons:
@@ -117,9 +119,30 @@ The hw1 tools, plus:
     2. Page buttons should be with the [html name attribute](https://www.w3schools.com/tags/att_name.asp) **"page-<target_page_number>"**
 
 ## Test requirements- hw2
-1. [html name attributes](https://www.w3schools.com/tags/att_name.asp):
-    1. Per note, `Edit`/`Delete` buttons should have **"delete-<note_id>"**, **"edit-<note_id>"**
-    2. The `Add new note` button should have **"add-note"**.
+1. 
+    1. Each note should have an `Edit`/`Delete` button.
+    2. Edit button: we will test the updated the note body.
+        1. button name **"edit-<note_id>"** [html name attributes](https://www.w3schools.com/tags/att_name.asp).
+        2. When clicked, a text input should be rendered:
+            1. with the same input as the note.
+            2. It should be editable
+            3. with name **"text_input-<note_id>"**
+            4. with "save" button **"text_input_save-<note_id>"**
+            5. with "cancel" button **"text_input_cancel-<note_id>"**
+
+    3. Delete button:
+        1. name **"delete-<note_id>"** [html name attributes](https://www.w3schools.com/tags/att_name.asp).
+
+    3. `Add new note` button: we will only test the body of the new message, (content field).
+        1. button name **"add_new_note"**. [html name attributes](https://www.w3schools.com/tags/att_name.asp).
+        2. When clicked, React should render a text input:
+            1. It should be editable
+            2. with name **"text_input_new_note"**
+            3. with "save" button **"text_input_save_new_note"**
+            4. with "cancel" button **"text_input_cancel_new_note"**
+    4. There should be a global "theme" button that changes between two styles: dark and light.
+        1. name **"change_theme"** [html name attributes](https://www.w3schools.com/tags/att_name.asp).
+        2. You're free to implement any style change, as long as it appears visually on the UI.
 
 ### The tester will:
 1. `git clone <your_submitted_github_repo>`
@@ -128,7 +151,7 @@ The hw1 tools, plus:
 3. Copy a `.env` file into the `backend` dir.
 4. `npm install` from the `backend` dir (package.json should exist)
 5. `node index.js` from the `backend` dir (configured to default port 3001)
-6. Run tests.
+6. Run tests based on 'test requirement'.
 
 
 
