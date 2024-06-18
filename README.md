@@ -16,7 +16,7 @@ We will continue from hw1, the previous website. The main goal of this task is t
 5. Deadline: 30.6.24, end of day.
 6. Additionally, solve the [theoretical questions](https://forms.gle/r4gVbb16KKNjmW1e8).
 7. Fill in repository details in (Moodle's "הגשה מטלה 2").
-8. Use Typescript.
+8. Use Typescript in the front end.
 9. The ex2 forum is open for questions in Moodle.
 10. Git repository content:
     1. Aim for a minimal repository size that can be cloned and installed:  most of the files in github should be code and package dependencies (package.json).
