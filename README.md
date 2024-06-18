@@ -148,8 +148,9 @@ The hw1 tools, plus:
 
 ### The tester will:
 1. `git clone <your_submitted_github_repo>`
-2. `npm install` from the `frontend` dir (package.json should exist)
-3. `npm run dev` from the `frontend` dir  (configured to default port 3000)
+2. `cd <cloned_dir>`
+3. `npm install` from the `frontend` dir (package.json should exist)
+4. `npm run dev` from the `frontend` dir  (configured to default port 3000)
 3. Copy a `.env` file into the `backend` dir.
 4. `npm install` from the `backend` dir (package.json should exist)
 5. `node index.js` from the `backend` dir (configured to default port 3001)
