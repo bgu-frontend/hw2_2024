@@ -22,6 +22,9 @@ We will continue from hw1, the previous website. The main goal of this task is t
     1. Aim for a minimal repository size that can be cloned and installed:  most of the files in github should be code and package dependencies (package.json).
     2. Don't submit node_modules dir, .next project dir, JSON creation script, .env file, or JSON files.
 11. If a specific use case is not described here, you can code it as you see fit.
+12. the submission commit will be tagged as "a2": [git tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+    1. git tag -a a2 -m "msg"
+
 
 ## AI
 Recommendation about using an AI assistant: You can ask questions and read the answers but never copy them. Understand the details, but write the code yourself. If two people copy the same AI code, it will be considered plagiarism.
