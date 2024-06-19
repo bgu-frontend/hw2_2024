@@ -82,7 +82,7 @@ The hw1 tools, plus:
     5. Delete the i'th note, DELETE request to 'notes/[i].'
 6. The backend will have a middleware logger for the incoming HTTP requests; it will log to a file called "log.txt":
     1. time
-    2. HTTP request methodאוקיי
+    2. HTTP request method.
     3. request target path
     4. request body
 
