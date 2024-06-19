@@ -123,7 +123,7 @@ The hw1 tools, plus:
 
 ## Test requirements- hw2
 1. Each note should have an `Edit`/`Delete` button.
-2. Edit button: we will test the updated note body.
+2. Edit button: we will only test the body of the edited note, (content field).
     1. name attribute: **"edit-<note_id>"**  [html name attributes](https://www.w3schools.com/tags/att_name.asp).
     2. When clicked, a text input should be rendered:
         1. with the same input as the note.
@@ -135,7 +135,7 @@ The hw1 tools, plus:
 3. Delete button:
     1. name **"delete-<note_id>"** [html name attributes](https://www.w3schools.com/tags/att_name.asp).
 
-4. `Add new note` button: we will only test the body of the new message, (content field).
+4. `Add new note` button: we will only test the body of the new note, (content field).
     1. button name **"add_new_note"**. [html name attributes](https://www.w3schools.com/tags/att_name.asp).
     2. When clicked, React should render a text input:
         1. It should be editable
