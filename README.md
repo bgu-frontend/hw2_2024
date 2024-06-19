@@ -123,7 +123,7 @@ The hw1 tools, plus:
 
 ## Test requirements- hw2
 1. Each note should have an `Edit`/`Delete` button.
-2. Edit button: we will test the updated the note body.
+2. Edit button: we will test the updated note body.
     1. name attribute: **"edit-<note_id>"**  [html name attributes](https://www.w3schools.com/tags/att_name.asp).
     2. When clicked, a text input should be rendered:
         1. with the same input as the note.
