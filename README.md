@@ -124,7 +124,7 @@ The hw1 tools, plus:
 ## Test requirements- hw2
 1. Each note should have an `Edit`/`Delete` button.
 2. Edit button: we will test the updated the note body.
-    1. button name **"edit-<note_id>"** [html name attributes](https://www.w3schools.com/tags/att_name.asp).
+    1. name attribute: **"edit-<note_id>"**  [html name attributes](https://www.w3schools.com/tags/att_name.asp).
     2. When clicked, a text input should be rendered:
         1. with the same input as the note.
         2. It should be editable
@@ -143,7 +143,7 @@ The hw1 tools, plus:
         3. with "save" button **"text_input_save_new_note"**
         4. with "cancel" button **"text_input_cancel_new_note"**
 5. There should be a global "theme" button that changes between two styles: dark and light.
-    1. name **"change_theme"** [html name attributes](https://www.w3schools.com/tags/att_name.asp).
+    1. name attribute: **"change_theme"**.
     2. You're free to implement any style change, as long as it appears visually on the UI.
 6. Data transfer: 10 notes at a time, (frontend-backend, backend-atlas, see Mongoose pagination API, similarly to hw1).
    
