@@ -38,7 +38,7 @@ Recommendation about using an AI assistant: You can ask questions and read the a
 1. Please put the previous code in a subdirectory called "frontend" and create a new directory called "backend." you can use the same GitHub link.
 2. As before, we will run the frontend on port 3000 and the backend on port 3001.
 3. The backend will use the .env file to define your environment variables:
-    1. Atlas connection string: You'll use your own, and the tests will use a new .env file.
+    1. Atlas connection string: You'll use your own, and the tests will use a new .env file. (Details in 'backend' below).
 
 ### Github 
 As before, You will submit HW2 will be submitted via Github.
