@@ -110,14 +110,14 @@ The hw1 tools, plus:
 
 ## Checking the coding task:
 
-## Test requirements- reminder from hw1
+## Front End test requirements- reminder from hw1
 1. Each note should be of [class name](https://www.w3schools.com/html/html_classes.asp) **"note"**. (And not post)
 2. A note must get the unique ID from the database and use it as the [html id attribute](https://www.w3schools.com/html/html_id.asp).
 3. Pagination buttons:
     1. Navigation buttons should be with [html name attribute](https://www.w3schools.com/tags/att_name.asp) **"first"**, **"previous"**, **"next"**, **"last"**.
     2. Page buttons should be with the [html name attribute](https://www.w3schools.com/tags/att_name.asp) **"page-<target_page_number>"**
 
-## Test requirements- hw2
+## Front End test requirements- hw2
 1. Each note should have an `Edit`/`Delete` button.
 2. Edit button: we will only test the body of the edited note, (content field).
     1. name attribute: **"edit-<note_id>"**  [html name attributes](https://www.w3schools.com/tags/att_name.asp).
