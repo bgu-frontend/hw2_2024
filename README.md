@@ -68,7 +68,7 @@ The hw1 tools, plus:
 
 ## Backend Description:
 1. The front end should connect to the backend with Axios HTTP requests.
-2. Like before, each page has ten notes. Please use Mongoose's pagination API.
+2. Like before, each page has ten notes. Please use Mongoose's pagination API to bring 10 notes only from Atlas.
 3. The backend should use dotenv to read the ".env" file. It will contain "MONGODB_CONNECTION_URL = '...'", which Mongoose will use.
 4. Routes:
     1. Get all notes, HTTP GET request to '/notes.'
