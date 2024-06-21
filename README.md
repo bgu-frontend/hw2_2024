@@ -68,19 +68,15 @@ The hw1 tools, plus:
 
 ## Backend Description:
 1. The front end should connect to the backend with Axios HTTP requests.
-2. The UI will have buttons (see backend section for routes description):
-    1. add an edit button for each note: Replace the content with an editable test initialized with the note's current content.
-    2. For each note, add a delete button.
-    2. One "add new note" button.
-3. Like before, each page has ten notes. Please use Mongoose's pagination API.
-4. The backend should use dotenv to read the ".env" file. It will contain "MONGODB_CONNECTION_URL = '...'", which Mongoose will use.
-5. Routes:
+2. Like before, each page has ten notes. Please use Mongoose's pagination API.
+3. The backend should use dotenv to read the ".env" file. It will contain "MONGODB_CONNECTION_URL = '...'", which Mongoose will use.
+4. Routes:
     1. Get all notes, HTTP GET request to '/notes.'
     2. Get the i'th note, GET request to '/notes/[i].' (For example, http://localhost:3001/notes/1)
     3. Create a new note POST request to '/notes.'
     4. Update the i'th note, PUT request to 'notes/[i].'
     5. Delete the i'th note, DELETE request to 'notes/[i].'
-6. The backend will have a middleware logger for the incoming HTTP requests; it will log to a file called "log.txt":
+5. The backend will have a middleware logger for the incoming HTTP requests; it will log to a file called "log.txt":
     1. time
     2. HTTP request method.
     3. request target path
