@@ -121,7 +121,7 @@ The hw1 tools, plus:
 ## Front End test requirements- hw2
 1. Each note should have an `Edit`/`Delete` button.
 2. Edit button: we will only test the body of the edited note, (content field).
-    1. name attribute: **"edit-<note_id>"**  [html name attributes](https://www.w3schools.com/tags/att_name.asp).
+    1. name attribute: **"edit-<note_id>"**  [html name attributes](https://www.w3schools.com/tags/att_name.asp). For example, "edit-1".
     2. When clicked, a text input should be rendered:
         1. with the same input as the note.
         2. It should be editable
@@ -130,7 +130,7 @@ The hw1 tools, plus:
         5. with "cancel" button **"text_input_cancel-<note_id>"**
 
 3. Delete button:
-    1. name **"delete-<note_id>"** [html name attributes](https://www.w3schools.com/tags/att_name.asp).
+    1. name **"delete-<note_id>"** [html name attributes](https://www.w3schools.com/tags/att_name.asp). For example, "delete-1".
 
 4. `Add new note` button: we will only test the body of the new note, (content field).
     1. button name **"add_new_note"**. [html name attributes](https://www.w3schools.com/tags/att_name.asp).
