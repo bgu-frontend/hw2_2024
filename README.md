@@ -46,7 +46,7 @@ As before, You will submit HW2 will be submitted via Github.
 ## Prerequisites
 ### Tools
 The hw1 tools, plus:
-1. Enable requests between the frontend and backend by using cors in the backend: [CORS](https://fullstackopen.com/en/part3/deploying_app_to_internet#same-origin-policy-and-cors)
+1. Enable requests between the frontend and backend by using cors in the backend: [CORS](https://fullstackopen.com/en/part3/deploying_app_to_internet#same-origin-policy-and-cors), note the expose headers parameter: it's needed to allow the browser to access your custom headers.
 2. Read the local .env file: [dotenv](https://www.npmjs.com/package/dotenv)
 3. The backend uses Mongoose to query the database. [mongoose](https://mongoosejs.com/docs/index.html)
 4. Use nodemon to rerun the backend automatically when the source file changes. [nodemon](https://www.npmjs.com/package/nodemon)
