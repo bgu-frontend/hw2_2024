@@ -7,6 +7,7 @@ We will continue from hw1, the previous website. The main goal of this task is t
 4. implement a logger middleware: log to file called "log.txt".
 5. Most of the material can be found in [Full Stack Open- part 3](https://fullstackopen.com/en/part3).
 6. In hw1, I accidentally used 'note' and 'post'. As a result, many people use '/posts.json' instead of '/notes.json' as a JSON server input, so we changed the tests to fit both. From HW2 on, we'll align on 'note.'. Please change the HTML names of the buttons and in other places from 'post' to 'note'.
+7. Warning: the University's firewall prevents connection with Atlas. If you have to work from the university, you can  [install](https://www.mongodb.com/docs/manual/installation/) a local mongodb server, just for development inside BGU.
 
 ## Submission
 1. Submission is in pairs, but starting alone is better for practice.
@@ -53,6 +54,9 @@ The hw1 tools, plus:
 4. Use nodemon to rerun the backend automatically when the source file changes. [nodemon](https://www.npmjs.com/package/nodemon)
 5. Refresh: Read about [await/async](https://javascript.info/async-await)
 6. What is [express](https://expressjs.com)
+7. Use [Postman](https://www.postman.com/downloads/) for backend testing.
+8. Use [Nodemon](https://www.npmjs.com/package/nodemon) to auto refresh the backend after saving its code.
+   
 
 ## Initialize a mongo server
 1. We will use the Mongo database to store the notes. It can be local or external to your machine. This task will use the external.
