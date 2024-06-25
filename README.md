@@ -24,6 +24,7 @@ We will continue from hw1, the previous website. The main goal of this task is t
 11. If a specific use case is not described here, you can code it as you see fit.
 12. the submission commit will be tagged as "a2": [git tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
     1. git tag -a a2 -m "msg"
+    2. git push origin --tags
 
 
 ## AI
@@ -149,8 +150,9 @@ The hw1 tools, plus:
 ### The tester will:
 1. `git clone <your_submitted_github_repo>`
 2. `cd <cloned_dir>`
-3. `npm install` from the `frontend` dir (package.json should exist)
-4. `npm run dev` from the `frontend` dir  (configured to default port 3000)
+3. `git checkout a2`
+4. `npm install` from the `frontend` dir (package.json should exist)
+5. `npm run dev` from the `frontend` dir  (configured to default port 3000)
 3. Copy a `.env` file into the `backend` dir.
 4. `npm install` from the `backend` dir (package.json should exist)
 5. `node index.js` from the `backend` dir (configured to default port 3001)
