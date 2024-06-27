@@ -147,7 +147,7 @@ The hw1 tools, plus:
 5. There should be a global "theme" button that changes between two styles: dark and light.
     1. name attribute: **"change_theme"**.
     2. You're free to implement any style change, as long as it appears visually on the UI.
-6. Data transfer: 10 notes at a time, (frontend-backend, backend-atlas, see Mongoose pagination API, similarly to hw1).
+6. Data transfer: 10 notes at a time, (frontend-backend, backend-atlas, see Mongoose pagination API, similarly to hw1). One way which is requires the least changes to hw1, is via parsing URL query parameters in the backend. Look for `req.query` in [express docs](https://expressjs.com/en/api.html#req).
    
 
 
