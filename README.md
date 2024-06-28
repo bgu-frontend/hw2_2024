@@ -26,6 +26,9 @@ We will continue from hw1, the previous website. The main goal of this task is t
 12. the submission commit will be tagged as "a2": [git tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
     1. git tag -a a2 -m "msg"
     2. git push origin --tags
+13. to test your submission:
+    1. node ./setup.js <your_repo_link>
+    2. A single post should appear in: http://localhost:3000/  
 
 
 ## AI
