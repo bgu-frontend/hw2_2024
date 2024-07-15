@@ -113,7 +113,7 @@ The hw1 tools, plus:
     2. Generic error response, cannot delete/update note: 500
     4. Missing fields in the request: 400.
     5. Success codes:
-        1. Saved note: 201.
+        1. Saved (Created) note: 201.
         2. Deleted note: 204.
         3. Other: 200.
 
