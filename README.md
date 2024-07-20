@@ -4,7 +4,7 @@ We will continue from hw1, the previous website. The main goal of this task is t
 1. We will use a Mongo database service from Atlas.
 2. The database will hold the notes data.
 3. We will use Express to implement the backend, which will support fetching, adding, deleting, and removing messages.
-4. implement a logger middleware: log to file called "log.txt".
+4. implement a logger middleware: log to "backend/log.txt".
 5. Most of the material can be found in [Full Stack Open- part 3](https://fullstackopen.com/en/part3).
 6. In hw1, I accidentally used 'note' and 'post'. As a result, many people use '/posts.json' instead of '/notes.json' as a JSON server input, so we changed the tests to fit both. From HW2 on, we'll align on 'note.'. Please change the HTML names of the buttons and in other places from 'post' to 'note'.
 7. Warning: the University's firewall prevents connection with Atlas. If you have to work from the university, you can  [install](https://www.mongodb.com/docs/manual/installation/) a local mongodb server, just for development inside BGU.
