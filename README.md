@@ -80,7 +80,7 @@ The hw1 tools, plus:
 2. Like before, each page has ten notes. You can use Mongoose's pagination API to bring 10 notes only from Atlas.[Queries with limit example](https://mongoosejs.com/docs/queries.html), [Skip](https://mongoosejs.com/docs/api/query.html#Query.prototype.skip()), if you want to use other libraries, please ask in the forum.
 3. The backend should use dotenv to read the ".env" file. It will contain "MONGODB_CONNECTION_URL = '...'", which Mongoose will use.
 4. Routes:
-    1. Get all notes, HTTP GET request to '/notes.'
+    1. Get all notes, or notes for a single page:  HTTP GET request to '/notes.' (Behaviour is controlled using query parameters).
     2. Get the i'th note, GET request to '/notes/[i].' (For example, http://localhost:3001/notes/1)
     3. Create a new note POST request to '/notes.'
     4. Update the i'th note, PUT request to 'notes/[i].'
